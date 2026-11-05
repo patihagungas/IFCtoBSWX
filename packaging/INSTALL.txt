@@ -1,0 +1,17 @@
+IFC to BSWX Converter - installation
+=====================================
+
+1. Extract this whole zip to a folder (right-click > Extract All...).
+2. Double-click  Install.cmd
+   - installs to  %LOCALAPPDATA%\Programs\IFCtoBSWX  (no administrator rights needed)
+   - adds "IFC to BSWX Converter" to the Start menu and the Desktop
+   - adds the app to "Open with" for .ifc files
+3. Start the app, click "Add files...", pick your IFC files and press Convert.
+
+If Windows SmartScreen warns about the unsigned program, choose "More info" > "Run anyway".
+
+Uninstall: Settings > Apps > Installed apps > "IFC to BSWX Converter" > Uninstall.
+
+Command line (no window):
+  "%LOCALAPPDATA%\Programs\IFCtoBSWX\IFCtoBSWX.exe" --cli model.ifc -o C:\out
+  (progress is written to %TEMP%\IFCtoBSWX-cli.log)

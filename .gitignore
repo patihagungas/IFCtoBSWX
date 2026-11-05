@@ -1,0 +1,13 @@
+# sample models (client data, not for publishing)
+IFC/
+BSWX/
+*.ifc
+*.bswx
+# generated
+out/
+build/
+release/
+build_log.txt
+__pycache__/
+*.pyc
+*.part
