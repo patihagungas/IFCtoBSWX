@@ -23,6 +23,12 @@ There is no public BSWX spec; the format was reverse-engineered from the sample 
 | 25-335 LES Traffic Decking (5.6 MB) | 6041 | 3610 | ~25–31 s | all checks pass, 0.008 mm |
 | P196-RPA-MODEL EAST (31 MB) | 9529 | 1306 | ~3 min (old, single-process) | 0.002 mm after recentring; **re-convert** with current code to get closed shells |
 
+## Repository
+GitHub: https://github.com/patihagungas/IFCtoBSWX (**public**, branch `main`).
+Not committed on purpose (.gitignore): `IFC/`, `BSWX/` sample models (client data, some >100 MB),
+`out/`, `build/`, `release/`. `ifc2bswx/template_header.bin` was neutralised with
+`tools/sanitize_template.py` (no project names/ids/grid). Keep client data out of the repo.
+
 ## Project layout
 ```
 ifc2bswx/            the package
